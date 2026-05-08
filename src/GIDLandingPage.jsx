@@ -646,144 +646,186 @@ export default function GIDLandingPage() {
             </div>
           </div>
 
-          {/* Washing machine + boxes row */}
+          {/* ── CASE STUDY: Washing Machine (Unified Rectangle) ── */}
           <div
-            style={
-              compRowStyle
-            }
+            style={{
+              marginBottom:
+                "24px",
+            }}
           >
+            <p
+              style={{
+                color:
+                  gold,
+                fontSize:
+                  "12px",
+                fontWeight:
+                  "700",
+                marginBottom:
+                  "12px",
+                textAlign:
+                  "center",
+                textTransform:
+                  "uppercase",
+                fontFamily:
+                  font1,
+              }}
+            >
+              Case
+              Study:
+              Mini
+              Washing
+              Machine
+            </p>
+
+            {/* The Single Rectangle Container */}
             <div
               style={{
                 display:
                   "flex",
-                alignItems:
+                flexDirection:
+                  "row",
+                gap: "2px", // Minimal gap to keep them visually connected
+                justifyContent:
                   "center",
-                gap: "10px",
+                backgroundColor:
+                  "#0c1e30", // Unified background
+                padding:
+                  "8px",
+                borderRadius:
+                  "12px",
+                border: `1px solid ${tealBorder}`, // Single border around both
               }}
             >
-              <div
-                style={{
-                  flex: 1.3,
-                }}
-              >
-                <div
-                  style={{
-                    display:
-                      "flex",
-                    alignItems:
-                      "center",
-                    gap: "5px",
-                  }}
-                >
-                  <img
-                    src={
-                      IMG.washChina
-                    }
-                    alt="Washing machine on 1688"
-                    style={{
-                      flex: 1,
-                      height:
-                        "99px",
-                      objectFit:
-                        "cover",
-                      borderRadius:
-                        "8px",
-                      minWidth: 0,
-                    }}
-                  />
-                  <VsBadge />
-                  <img
-                    src={
-                      IMG.washNg
-                    }
-                    alt="Washing machine on Jumia"
-                    style={{
-                      flex: 1,
-                      height:
-                        "99px",
-                      objectFit:
-                        "cover",
-                      borderRadius:
-                        "8px",
-                      minWidth: 0,
-                    }}
-                  />
-                </div>
-              </div>
-              <div
+              <img
+                src={
+                  IMG.washChina
+                }
+                alt="China Price"
                 style={{
                   flex: 1,
+                  height:
+                    "140px",
+                  objectFit:
+                    "contain",
+                  borderRadius:
+                    "6px 0 0 6px", // Rounds only the outer left corners
                 }}
-              >
-                <p
-                  style={{
-                    color:
-                      gold,
-                    fontWeight:
-                      "800",
-                    fontSize:
-                      "12px",
-                    fontFamily:
-                      font1,
-                    margin:
-                      "0 0 4px",
-                  }}
-                >
-                  Proof
-                  of
-                  Receipt:
-                </p>
-                <img
-                  src={
-                    IMG.boxes
-                  }
-                  alt="Delivery boxes from China"
-                  style={{
-                    width:
-                      "100%",
-                    height:
-                      "48px",
-                    objectFit:
-                      "cover",
-                    borderRadius:
-                      "8px",
-                    marginBottom:
-                      "4px",
-                  }}
-                />
-                <p
-                  style={{
-                    color:
-                      "#ffffff",
-                    fontSize:
-                      "10px",
-                    margin: 0,
-                    fontFamily:
-                      font2,
-                    lineHeight:
-                      "1.4",
-                  }}
-                >
-                  Consignments
-                  received
-                  regularly
-                  from
-                  China.
-                </p>
-              </div>
+              />
+              {/* Visual Divider Line */}
+              <div
+                style={{
+                  width:
+                    "1px",
+                  backgroundColor:
+                    tealBorder,
+                  margin:
+                    "10px 0",
+                }}
+              ></div>
+
+              <img
+                src={
+                  IMG.washNg
+                }
+                alt="Nigeria Price"
+                style={{
+                  flex: 1,
+                  height:
+                    "140px",
+                  objectFit:
+                    "contain",
+                  borderRadius:
+                    "0 6px 6px 0", // Rounds only the outer right corners
+                }}
+              />
             </div>
+          </div>
+
+          {/* ── PROOF OF RECEIPT (New Row) ── */}
+          <div
+            style={{
+              marginBottom:
+                "28px",
+            }}
+          >
+            <p
+              style={{
+                color:
+                  "gold",
+                fontSize:
+                  "15px",
+                textAlign:
+                  "center",
+                marginBottom:
+                  "8px",
+                opacity: 0.8,
+              }}
+            >
+              PROOF
+              OF
+              RECEIPT
+              &
+              CLEARANCE
+            </p>
+            <img
+              src={
+                IMG.boxes
+              }
+              alt="Delivery Boxes"
+              style={{
+                width:
+                  "70%",
+                maxWidth:
+                  "400px", // Prevents the image from becoming too huge on desktop
+                height:
+                  "auto",
+                display:
+                  "block", // Changes from inline to block to allow centering
+                marginLeft:
+                  "auto", // Centers horizontally
+                marginRight:
+                  "auto", // Centers horizontally
+                borderRadius:
+                  "12px",
+                border: `1px solid ${gold}`,
+              }}
+            />
+            <p
+              style={{
+                color:
+                  "#ffffff",
+                fontSize:
+                  "20px",
+                margin: 0,
+                fontFamily:
+                  font2,
+                  textAlign:
+                  "center",
+                lineHeight:
+                  "1.4",
+              }}
+            >
+              Consignments
+              received
+              regularly
+              from
+              China.
+            </p>
           </div>
 
           <Divider />
 
-          {/* Phase cards row 1 */}
+          {/* ── TRAINING PHASES (Single Column) ── */}
           <div
             style={{
               display:
                 "flex",
-              gap: "8px",
+              flexDirection:
+                "column",
+              gap: "12px",
               marginBottom:
-                "8px",
+                "22px",
             }}
           >
             <PhaseCard
@@ -799,6 +841,7 @@ export default function GIDLandingPage() {
               app
               setups.
             </PhaseCard>
+
             <PhaseCard
               icon="🔍"
               phase="Phase 2:"
@@ -814,18 +857,7 @@ export default function GIDLandingPage() {
               certified
               merchants.
             </PhaseCard>
-          </div>
 
-          {/* Phase cards row 2 */}
-          <div
-            style={{
-              display:
-                "flex",
-              gap: "8px",
-              marginBottom:
-                "22px",
-            }}
-          >
             <PhaseCard
               icon="🤖"
               phase="Phases 7–9:"
@@ -848,6 +880,7 @@ export default function GIDLandingPage() {
               &amp;
               more.
             </PhaseCard>
+
             <PhaseCard
               icon="👑"
               phase="Phase 10:"
