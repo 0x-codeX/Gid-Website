@@ -5,17 +5,17 @@ const JOIN_LINK =
 
 const IMG =
   {
-    logo: "/images/gid-logo.png",
+    logo: "images/gid-logo.png",
     earbudsChina:
-      "/images/earbuds-china.jpg",
+      "images/earbuds-china.jpg",
     earbudsNg:
-      "/images/earbuds-nigeria.jpg",
+      "images/earbuds-nigeria.jpg",
     washChina:
-      "/images/washing-china.jpg",
+      "images/washing-china.jpg",
     washNg:
-      "/images/washing-nigeria.jpg",
+      "images/washing-nigeria.jpg",
     boxes:
-      "/images/delivery-boxes.jpg",
+      "images/delivery-boxes.jpg",
   };
 
 const gold =
