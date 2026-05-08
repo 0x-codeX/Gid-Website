@@ -381,7 +381,19 @@ export default function GIDLandingPage() {
                 "50%", // This creates the circular shape
               border: `0px solid ${gold}`, // Optional: adds a nice gold ring around it
               marginBottom:
-                "16px",
+                "26px",
+              backgroundColor:
+                "#0c1e30",
+              display:
+                "block", // Add this to make the logo a block element
+              marginLeft:
+                "auto", // Add this to center horizontally
+              marginRight:
+                "auto", // Add this to center horizontally
+              transform:
+                "scale(1.4)",
+              overflow:
+                "hidden",
             }}
           />
           <p
@@ -850,7 +862,11 @@ export default function GIDLandingPage() {
                     "700",
                 }}
               >
-                Chinese Products meets Nigerian Brands!{" "}
+                Chinese
+                Products
+                meets
+                Nigerian
+                Brands!{" "}
               </span>
               Move
               beyond
