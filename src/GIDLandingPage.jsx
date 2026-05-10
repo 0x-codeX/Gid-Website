@@ -474,10 +474,15 @@ export default function GIDLandingPage() {
             Nigeria
           </p>
           <GoldButton>
-            Click
-            Here
-            to
-            Join
+            <a
+              href="https://wa.me/2348026933327?text=Hello%20Gid,%20I%20want%20to%20join%20the%20Training"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CHAT
+              ON
+              WHATSAPP
+            </a>
           </GoldButton>
         </section>
 
@@ -800,7 +805,7 @@ export default function GIDLandingPage() {
                 margin: 0,
                 fontFamily:
                   font2,
-                  textAlign:
+                textAlign:
                   "center",
                 lineHeight:
                   "1.4",
@@ -916,11 +921,20 @@ export default function GIDLandingPage() {
 
           {/* CTA 2 */}
           <GoldButton>
-            Join
-            GID
-            Tutorials
-            VIP
-            Group
+            <a
+              href="https://chat.whatsapp.com/LDjzuRdJku4KsSVMQ01a0u"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color:
+                  "#000",
+              }} // Optional: Different color
+            >
+              JOIN
+              OUR
+              Q&A
+              GROUP
+            </a>
           </GoldButton>
 
           {/* Footer */}
