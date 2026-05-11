@@ -16,6 +16,10 @@ const IMG =
       "images/washing-nigeria.jpg",
     boxes:
       "images/delivery-boxes.jpg",
+    genericWatch:
+      "images/generic-watch.png",
+    velocityWatch:
+      "images/velocity-watch.jpg",
   };
 
 const gold =
@@ -818,6 +822,218 @@ export default function GIDLandingPage() {
               China.
             </p>
           </div>
+
+          {/* ── WHITE LABELING SECTION ── */}
+          <section
+            style={{
+              padding:
+                "0 15px 24px",
+            }}
+          >
+            <SectionLabel>
+              White
+              Labeling
+              Strategy
+            </SectionLabel>
+
+            <div
+              style={
+                compRowStyle
+              }
+            >
+              <p
+                style={{
+                  color:
+                    "#ffffff",
+                  fontSize:
+                    "12px",
+                  lineHeight:
+                    "1.6",
+                  fontFamily:
+                    font2,
+                  marginBottom:
+                    "16px",
+                  textAlign:
+                    "center",
+                }}
+              >
+                White
+                Labeling
+                is
+                when
+                you
+                put{" "}
+                <span
+                  style={{
+                    color:
+                      gold,
+                    fontWeight:
+                      "700",
+                  }}
+                >
+                  your
+                  own
+                  brand
+                  name
+                </span>{" "}
+                on
+                quality
+                products
+                from
+                China.
+                You
+                buy
+                from
+                the
+                same
+                factories,
+                but
+                you
+                sell
+                as
+                a{" "}
+                <span
+                  style={{
+                    color:
+                      blue,
+                  }}
+                >
+                  Premium
+                  Brand
+                  Owner
+                </span>{" "}
+                for
+                much
+                higher
+                profits.
+              </p>
+
+              {/* Image Comparison */}
+              <div
+                style={{
+                  display:
+                    "flex",
+                  gap: "8px",
+                  marginBottom:
+                    "20px",
+                }}
+              >
+                <div
+                  style={{
+                    flex: 1,
+                    textAlign:
+                      "center",
+                  }}
+                >
+                  <img
+                    src={
+                      IMG.genericWatch
+                    }
+                    alt="Generic Product"
+                    style={{
+                      width:
+                        "100%",
+                      borderRadius:
+                        "8px",
+                      border: `1px solid ${tealBorder}`,
+                    }}
+                  />
+                  <p
+                    style={{
+                      color:
+                        textMuted,
+                      fontSize:
+                        "9px",
+                      marginTop:
+                        "6px",
+                      fontFamily:
+                        font1,
+                      fontWeight:
+                        "800",
+                    }}
+                  >
+                    GENERIC
+                    PRODUCT
+                  </p>
+                </div>
+
+                <div
+                  style={{
+                    display:
+                      "flex",
+                    alignItems:
+                      "center",
+                    color:
+                      gold,
+                    fontWeight:
+                      "900",
+                  }}
+                >
+                  ➔
+                </div>
+
+                <div
+                  style={{
+                    flex: 1,
+                    textAlign:
+                      "center",
+                  }}
+                >
+                  <img
+                    src={
+                      IMG.velocityWatch
+                    }
+                    alt="White Labeled Product"
+                    style={{
+                      width:
+                        "100%",
+                      borderRadius:
+                        "8px",
+                      border: `1px solid ${gold}`,
+                    }}
+                  />
+                  <p
+                    style={{
+                      color:
+                        gold,
+                      fontSize:
+                        "9px",
+                      marginTop:
+                        "6px",
+                      fontFamily:
+                        font1,
+                      fontWeight:
+                        "800",
+                    }}
+                  >
+                    YOUR
+                    PREMIUM
+                    BRAND
+                  </p>
+                </div>
+              </div>
+
+              {/* White Labeling WhatsApp CTA */}
+              <GoldButton>
+                <a
+                  href="https://wa.me/2348026933327?text=Hello%20Gid,%20I%20want%20to%20ask%20about%20White%20Labeling%20my%20own%20brand"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color:
+                      "#000",
+                    textDecoration:
+                      "none",
+                  }}
+                >
+                  ASK
+                  ABOUT
+                  WHITE
+                  LABELING
+                </a>
+              </GoldButton>
+            </div>
+          </section>
 
           <Divider />
 
