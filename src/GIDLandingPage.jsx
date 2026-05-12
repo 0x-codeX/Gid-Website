@@ -22,6 +22,39 @@ const IMG =
       "images/velocity-watch.jpg",
   };
 
+  const handleJoinClick =
+    (
+      buttonLocation,
+    ) => {
+      if (
+        window.ttq
+      ) {
+        window.ttq.track(
+          "Contact",
+          {
+            contents:
+              [
+                {
+                  content_id:
+                    "masterclass_signup",
+                  content_name:
+                    "China Importation Masterclass",
+                },
+              ],
+            value: 0,
+            currency:
+              "NGN",
+            description: `User clicked join button at: ${buttonLocation}`,
+          },
+        );
+      }
+      // Open the WhatsApp link
+      window.open(
+        JOIN_LINK,
+        "_blank",
+      );
+    };
+
 const gold =
   "#C9A227";
 const goldDark =
@@ -1246,10 +1279,34 @@ export default function GIDLandingPage() {
                 @gidtutorials
               </span>
             </div>
-            <GoldButton>
-              Enroll
-              Now!
-            </GoldButton>
+            <button
+              onClick={() =>
+                handleJoinClick(
+                  "hero_section",
+                )
+              }
+              style={{
+                color:
+                  gold,
+                fontWeight:
+                  "800",
+                fontSize:
+                  "12px",
+                fontFamily:
+                  font1,
+                letterSpacing:
+                  "1px",
+              }}
+            >
+              <GoldButton>
+                SECURE
+                YOUR
+                SPOT
+                IN
+                THE
+                MASTERCLASS.
+              </GoldButton>
+            </button>
           </div>
         </section>
 
