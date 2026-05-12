@@ -129,10 +129,6 @@ export default function App() {
             e
           ] =
             +new Date();
-          ttq._t[
-            e
-          ] =
-            +new Date();
           ttq._o =
             ttq._o ||
             {};
@@ -165,10 +161,11 @@ export default function App() {
           );
         };
 
+      // USE YOUR UPDATED PIXEL ID HERE
       ttq.load(
-        "D81LMEBC77U0LK4NBGI0",
+        "D81NEGBC77U1Q23A9BQ0",
       );
-      ttq.page(); // Tracks the initial page view
+      ttq.page();
     })(
       window,
       document,
