@@ -3,7 +3,7 @@ import GIDLandingPage from "./GIDLandingPage";
 
 export default function App() {
   useEffect(() => {
-    // TikTok Pixel Initialization
+    // TikTok Pixel Initialization Logic
     !(function (
       w,
       d,
@@ -161,9 +161,8 @@ export default function App() {
           );
         };
 
-      // USE YOUR UPDATED PIXEL ID HERE
+      // INITIALIZE WITH YOUR SPECIFIC ID
       ttq.load(
-        "D81NEGBC77U1Q23A9BQ0",
         "D81LMEBC77U0LK4NBGI0",
       );
       ttq.page();
@@ -172,7 +171,7 @@ export default function App() {
       document,
       "ttq",
     );
-  }, []);
+  }, []); // Empty array means this runs once on mount
 
   return (
     <GIDLandingPage />
