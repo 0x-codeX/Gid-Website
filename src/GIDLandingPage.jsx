@@ -160,6 +160,24 @@ export default function GIDLandingPage() {
         value: 0, currency: "NGN",
         description: `Source: ${buttonLocation}`,
       });
+
+      window.ttq.track(
+        "StartTrial",
+        {
+          contents:
+            [
+              {
+                content_id:
+                  "masterclass_signup",
+                content_name:
+                  "China Importation Masterclass",
+              },
+            ],
+          value: 0,
+          currency:
+            "NGN",
+        },
+      );
     }
     setTimeout(() => { window.open(JOIN_LINK, "_blank"); }, 100);
   };
@@ -305,7 +323,7 @@ export default function GIDLandingPage() {
 
             {/* Final CTA — fires TikTok pixel */}
             <GoldButton onClick={() => handleJoinClick("footer_section")}>
-              SECURE YOUR SPOT IN THE MASTERCLASS
+              SECURE YOUR SPOT IN THE MASTERCLASS!
             </GoldButton>
           </div>
         </section>
