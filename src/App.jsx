@@ -164,6 +164,7 @@ export default function App() {
       // USE YOUR UPDATED PIXEL ID HERE
       ttq.load(
         "D81NEGBC77U1Q23A9BQ0",
+        "D81LMEBC77U0LK4NBGI0",
       );
       ttq.page();
     })(
