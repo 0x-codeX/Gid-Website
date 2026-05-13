@@ -1,4 +1,6 @@
 //import React from "react";
+import { useEffect } from "react";
+
 
 const JOIN_LINK =
   "https://chat.whatsapp.com/J67zNDlTPBDFFbq1PJnfzW";
@@ -22,6 +24,23 @@ const IMG =
       "images/velocity-watch.jpg",
   };
 
+  export default function GIDLandingPage() {
+  
+  // 1. TRACK "VIEW CONTENT" ON LOAD
+  useEffect(() => {
+    if (window.ttq) {
+      window.ttq.track('ViewContent', {
+        contents: [{
+          content_id: 'masterclass_landing',
+          content_name: 'China Importation Masterclass',
+          content_category: 'Education'
+        }],
+        value: 0,
+        currency: 'NGN'
+      });
+    }
+  }, []);
+
   const handleJoinClick =
     (
       buttonLocation,
@@ -29,8 +48,9 @@ const IMG =
       if (
         window.ttq
       ) {
+        // Satisfy "InitiateCheckout"
         window.ttq.track(
-          "Contact",
+          "InitiateCheckout",
           {
             contents:
               [
@@ -44,14 +64,39 @@ const IMG =
             value: 0,
             currency:
               "NGN",
-            description: `User clicked join button at: ${buttonLocation}`,
+          },
+        );
+
+        // Satisfy "CompleteRegistration" (The final goal)
+        window.ttq.track(
+          "CompleteRegistration",
+          {
+            contents:
+              [
+                {
+                  content_id:
+                    "masterclass_signup",
+                  content_name:
+                    "China Importation Masterclass",
+                },
+              ],
+            value: 0,
+            currency:
+              "NGN",
+            description: `Source: ${buttonLocation}`,
           },
         );
       }
-      // Open the WhatsApp link
-      window.open(
-        JOIN_LINK,
-        "_blank",
+
+      // Slight delay to ensure pixel fires before redirect
+      setTimeout(
+        () => {
+          window.open(
+            JOIN_LINK,
+            "_blank",
+          );
+        },
+        100,
       );
     };
 
@@ -350,7 +395,7 @@ function Divider() {
   );
 }
 
-export default function GIDLandingPage() {
+//export default function GIDLandingPage() {
   return (
     <div
       style={{
