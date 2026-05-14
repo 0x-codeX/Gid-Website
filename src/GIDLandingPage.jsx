@@ -151,33 +151,33 @@ export default function GIDLandingPage() {
   // TikTok: track join button clicks
   const handleJoinClick = (buttonLocation) => {
     if (window.ttq) {
-      window.ttq.track("InitiateCheckout", {
-        contents: [{ content_id: "masterclass_signup", content_name: "China Importation Masterclass" }],
-        value: 0, currency: "NGN",
-      });
+      // window.ttq.track("InitiateCheckout", {
+      //   contents: [{ content_id: "masterclass_signup", content_name: "China Importation Masterclass" }],
+      //   value: 0, currency: "NGN",
+      // });
       window.ttq.track("CompleteRegistration", {
         contents: [{ content_id: "masterclass_signup", content_name: "China Importation Masterclass" }],
         value: 0, currency: "NGN",
         description: `Source: ${buttonLocation}`,
       });
 
-      window.ttq.track(
-        "StartTrial",
-        {
-          contents:
-            [
-              {
-                content_id:
-                  "masterclass_signup",
-                content_name:
-                  "China Importation Masterclass",
-              },
-            ],
-          value: 0,
-          currency:
-            "NGN",
-        },
-      );
+      // window.ttq.track(
+      //   "StartTrial",
+      //   {
+      //     contents:
+      //       [
+      //         {
+      //           content_id:
+      //             "masterclass_signup",
+      //           content_name:
+      //             "China Importation Masterclass",
+      //         },
+      //       ],
+      //     value: 0,
+      //     currency:
+      //       "NGN",
+      //   },
+      // );
     }
     setTimeout(() => { window.open(JOIN_LINK, "_blank"); }, 100);
   };
