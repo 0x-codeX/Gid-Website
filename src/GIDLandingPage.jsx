@@ -143,7 +143,7 @@ export default function GIDLandingPage() {
     if (window.ttq) {
       window.ttq.track("ViewContent", {
         contents: [{ content_id: "masterclass_landing", content_name: "China Importation Masterclass", content_category: "Education" }],
-        value: 0, currency: "NGN",
+        value: 20000, currency: "NGN",
       });
     }
   }, []);
@@ -323,7 +323,7 @@ export default function GIDLandingPage() {
 
             {/* Final CTA — fires TikTok pixel */}
             <GoldButton onClick={() => handleJoinClick("footer_section")}>
-              SECURE YOUR SPOT IN THE MASTERCLASS
+              SECURE YOUR SPOT IN THE MASTERCLASS!
             </GoldButton>
           </div>
         </section>
