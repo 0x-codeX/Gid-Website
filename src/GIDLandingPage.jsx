@@ -323,7 +323,7 @@ export default function GIDLandingPage() {
 
             {/* Final CTA — fires TikTok pixel */}
             <GoldButton onClick={() => handleJoinClick("footer_section")}>
-              SECURE YOUR SPOT IN THE MASTERCLASS!
+              SECURE YOUR SPOT IN THE MASTERCLASS
             </GoldButton>
           </div>
         </section>
