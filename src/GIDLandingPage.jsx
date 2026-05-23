@@ -1319,7 +1319,7 @@ export default function GIDLandingPage() {
               SPOT
               IN
               THE
-              MASTERCLASS
+              MASTERCLASS!
             </GoldButton>
           </div>
         </section>
